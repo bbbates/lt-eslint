@@ -80,7 +80,7 @@
            :wrap-iife [2 "any"]
            :valid-typeof 2
            :handle-callback-err [2 "^(err|error)$"]
-           :operator-linebreak [2 "after" {:overrides {:? "before", :: "before"}}]
+           :operator-linebreak [2 "after" {:overrides {:? "before" ":" "before"}}]
            :no-label-var 2
            :generator-star-spacing [2 {:before true, :after true}]
            :no-irregular-whitespace 2

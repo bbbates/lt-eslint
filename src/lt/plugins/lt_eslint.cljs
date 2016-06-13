@@ -33,8 +33,8 @@
 (defn- eslint-config
   [ed [config-map]]
   (or
-    config-map
     (js->clj (find-eslint-config-file ed) :keywordize-keys true)
+    config-map
     rules/default-config))
 
 ;; ESLint config read from:
