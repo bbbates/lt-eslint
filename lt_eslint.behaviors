@@ -1,0 +1,6 @@
+[
+ [:app :lt.objs.plugins/load-js ["eslint.js" "lt-eslint_compiled.js"]]
+
+  [:editor.javascript :lt.plugins.lt-lint/register-linter [:lt.plugins.lt-eslint/eslint]]
+  [:editor.javascript :lt.object/add-tag :docable] ;; required to show lint messages below the line
+ ]
