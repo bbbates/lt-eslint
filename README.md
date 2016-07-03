@@ -4,7 +4,13 @@
 
 ## Configuration
 
-Configuration used within an editor is loaded from the following sources, in precedence order:
+The Lighttable ESLint plugin, as of version 0.0.2, uses a "browserified" version of ESLint. This means, that:
+
+* Custom rules won't be loaded
+* The configuration file rules are loaded differently from the eslint CLI tool
+* YAML config files are currently not supported (JSON v3 only - which regular js comments in json files will cause the file to be skipped)
+
+Configuration files are loaded from the following sources, in precedence order:
 
 1. A ```.eslintrc``` or ```.eslintrc.json``` file in the project directory of the current editor.
 2. A ```"eslintConfig"``` section in the package.json file in the project directory of the current editor.

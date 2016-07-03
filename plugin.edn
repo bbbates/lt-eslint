@@ -1,5 +1,5 @@
 {:name "lt-eslint"
- :version "0.0.1"
+ :version "0.0.2"
  :author "Brendan Bates"
  :source "https://github.com/bbbates/lt-eslint"
  :desc "ESLint for Lighttable"
